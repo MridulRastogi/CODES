@@ -12,6 +12,6 @@ int main()
     cout << "Array empty or not: "   << a.empty() << endl;
     cout << "First element: "        << a.front() << endl;
     cout << "Last element: "         << a.back()  << endl;
-
+    
     return 0;
 }
