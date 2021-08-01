@@ -8,7 +8,7 @@ int main()
     for( i=0 ; i<a.size() ; i++ )
         cout<<a[i]<<" ";
     cout << endl;
-    
+
     cout << "Element at 2nd index: " << a.at(2)   << endl;
     cout << "Array empty or not: "   << a.empty() << endl;
     cout << "First element: "        << a.front() << endl;
