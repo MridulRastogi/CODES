@@ -15,6 +15,7 @@ int main()
     cout << "Size     -> " << v.size()     << endl;
     cout << "Front Element -> " << v.front() << endl;
     cout << "Back Element  -> " << v.back()  << endl;
+
     cout << "BEFORE POP" << endl;
     for(int i:v)
         cout<<i<<" ";
@@ -23,7 +24,7 @@ int main()
     cout << "AFTER POP" << endl;
     for(int i:v)
         cout<<i<<" ";
-    cout<<endl;
+    cout<<endl;.
 
     cout<<"BEFORE CLEARING :"<<endl;
     cout<<"Size: "<<v.size()<<" | Capacity: "<<v.capacity()<<endl;
