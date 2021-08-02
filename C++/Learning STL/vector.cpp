@@ -24,7 +24,7 @@ int main()
     cout << "AFTER POP" << endl;
     for(int i:v)
         cout<<i<<" ";
-    cout<<endl;.
+    cout<<endl;
 
     cout<<"BEFORE CLEARING :"<<endl;
     cout<<"Size: "<<v.size()<<" | Capacity: "<<v.capacity()<<endl;

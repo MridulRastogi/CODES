@@ -27,3 +27,11 @@ int main()
 
     return 0;
 }
+/*
+ Functions used in a map:
+ .insert
+ .erase
+ .find
+ .begin
+ .end
+*/
