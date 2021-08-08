@@ -35,3 +35,21 @@ int main()
  .begin
  .end
 */
+/*
+class Solution {
+public:
+    bool kidsWithCandies(int candies[], int extraCandies)
+    {
+        int size = sizeof(candies)/sizeof(candies[0]);
+        bool flag[size];
+        int i,max=0;
+        for(int i=0; i<size; i++)
+            if(max<candies[i])
+                max = candies[i];
+        for(i=0; i<size; i++)
+            if((candies[i]+extraCandies)>=max)
+                flag[i] = (candies[i]+extraCandies)>=max ? true : false ;
+        return flag;
+    }
+};
+*/
