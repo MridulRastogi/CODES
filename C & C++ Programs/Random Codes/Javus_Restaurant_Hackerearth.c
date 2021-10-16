@@ -17,19 +17,19 @@ int main()
 	for(i=0;i<m;i++)                        //Counting V,N,G,T,S,B,P
 	{
 		if(V[i]=='V')
-		v++;
+			v++;
 		else if(V[i]=='N')
-		n++;
+			n++;
 		else if(V[i]=='G')
-		g++;
+			g++;
 		else if(V[i]=='T')
-		t++;
+			t++;
 		else if(V[i]=='S')
-		s++;
+			s++;
 		else if(V[i]=='B')
-		b++;
+			b++;
 		else if(V[i]=='P')
-		p++;
+			p++;
 	}
 	for(i=0;i<nd;i++)
 	{

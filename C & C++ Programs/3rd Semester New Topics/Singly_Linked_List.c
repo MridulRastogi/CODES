@@ -23,4 +23,3 @@ int main()
         right->next = NULL;
     return 0;
 }
-

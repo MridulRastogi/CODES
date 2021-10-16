@@ -1,6 +1,13 @@
 #include<iostream>
 #include<vector>
 using namespace std;
+void print_by_array_method(vector<int> &V)
+{
+    for(int i=0; i<V.size(); i++)
+        cout << V[i] << " " ;
+    cout << endl;
+}
+
 int main()
 {
     vector<int> a(5,6);
@@ -22,6 +29,10 @@ int main()
     cout<<"Elements of vector b:"<<endl;
     for(int i:b)
         cout<<i<<" ";
-    cout<<endl;
+    cout<<endl<<endl;
+    cout<<"ELEMENTS OF VECTOR V: ";
+    print_by_array_method(v);
+    cout<<"ELEMENTS OF VECTOR B: ";
+    print_by_array_method(b);
     return 0;
 }
