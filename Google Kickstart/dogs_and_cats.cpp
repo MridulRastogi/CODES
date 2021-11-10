@@ -7,6 +7,13 @@ bool search(string s, int n)
             return true;
     return false;
 }
+bool search2(string s, int j, int n)
+{
+    for(int i=j; i<n; i++)
+        if(s[i]=='D')
+            return false;
+    return true;
+}
 int main()
 {
     int t,n,d,c,m,z,i;
@@ -36,22 +43,27 @@ int main()
                         break;
                     }
                 }
-                if(s[i]=='C')
+                else if(s[i]=='C')
                 {
                     if(c>0)
                         c--;
                     else
                     {
-                        flag = false;
-                        break;
+                        if(search2(s,i,n)==false)
+                        {
+                            flag = false;
+                            break;
+                        }
+                        else
+                            flag = true;
                     }
                 }
             }
         }
         if(flag==false)
-            cout<<"Case #"<<z<<": NO"<<endl;
+            cout<<"Case #"<<z<<": NO"<<endl<<endl;
         else
-            cout<<"Case #"<<z<<": YES"<<endl;
+            cout<<"Case #"<<z<<": YES"<<endl<<endl;
     }
     return 0;
 }
