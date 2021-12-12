@@ -13,6 +13,7 @@ int main()
         cin>>start>>end;
         a.push_back(make_pair(end,start));
     }
+    // SORT IN INCREASING ORDER OF STARTING TIME
     sort(a.begin(), a.end());
     cout<<endl;
     end   = a[0].first;
