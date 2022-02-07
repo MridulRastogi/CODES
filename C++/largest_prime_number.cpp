@@ -3,24 +3,34 @@
 using namespace std;
 int main()
 {
-    __int64 i,j,num,c=0,d=0;
-    for(i=100000000000000; i<=1000000000000000; i++)
+    vector<string> s;
+    int n,i,j,k;
+    string str;
+    cout<<"Enter number of words: ";
+    cin>>n;
+    for(i=0; i<n; i++)
     {
-        num = i;
-        for(j=2; j<=num/2; j++)
-            if(num%j==0)
-                c++;
-        if(c==0)
-        {
-            cout<<num<<", ";
-            d++;
-        }
-        if(d>=10)
-        {
-            cout<<endl;
-            d=0;
-        }
-        c=0;
+        cin>>str;
+        s.push_back(str);
     }
+    for(i=0; i<n; i++)
+    {
+        map<char,int> m;
+        for(int k=97; k<=122; k++)
+        {
+            m.insert({char(k),0});
+        }
+        for(j=0; j<s[i].length(); j++)
+        {
+            if(s[i][j]=='a' || s[i][j]=='e' || s[i][j]=='i' || s[i][j]=='o' || s[i][j]=='u')
+                m[s[i][j]]++;
+        }
+        cout<<s[i][j]<<endl;
+        for(int k=0; k<m.size(); k++)
+            cout << m[k] << endl;
+        cout<<endl;
+    }
+
+
     return 0;
 }

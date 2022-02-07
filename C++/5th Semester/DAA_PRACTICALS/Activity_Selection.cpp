@@ -1,6 +1,18 @@
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
+
+void print(vector<pair<int,int>> v)
+{
+    cout<<"START | ";
+    for(auto i:v)
+        cout<<i.second<<" | ";
+    cout<<endl<<"END   | ";
+    for(auto i:v)
+        cout<<i.first<<" | ";
+    cout<<endl;
+}
+
 int main()
 {
     int n, start, end;
@@ -15,6 +27,7 @@ int main()
     }
     // SORT IN INCREASING ORDER OF STARTING TIME
     sort(a.begin(), a.end());
+    print(a);
     cout<<endl;
     end   = a[0].first;
     start = a[0].second;
@@ -26,7 +39,7 @@ int main()
             res.push_back(make_pair(a[i].second, a[i].first));
         }
     for(auto j:res)
-        cout<<j.first<<" "<<j.second<<endl;
+        cout << j.first << " " << j.second << endl;
     return 0;
 }
 

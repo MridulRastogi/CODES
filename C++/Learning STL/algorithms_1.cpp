@@ -5,16 +5,16 @@ using namespace std;
 void print(vector<int> v)
 {
     cout<<"Elements: ";
-    for(int i:v)
-        cout<<i<<" ";
+    for(auto i=v.end()-1; i!=v.begin()-1; i--)
+        cout<<*i<<" ";
     cout<<endl;
 }
 int  main()
 {
     vector<int> v;
     v.push_back(3);
-    v.push_back(5);
     v.push_back(1);
+    v.push_back(5);
     v.push_back(4);
     v.push_back(2);
     print(v);
