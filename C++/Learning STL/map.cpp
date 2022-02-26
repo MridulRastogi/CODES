@@ -5,6 +5,7 @@ void print(map<int,string> m)
 {
     for(auto i:m)
         cout<<i.first<<" "<<i.second<<endl;
+    cout<<endl;
 }
 int main()
 {
@@ -20,7 +21,7 @@ int main()
     m.erase(4);
     cout<<"\nAfter erasing: \n";
     print(m);
-
+    //cout<<endl<<m.size()<<endl;
     auto it = m.find(3);
     for(auto i=it; i!=m.end(); i++)
         cout<<(*i).first<<endl;     //returns the elements from and onwards that key or index

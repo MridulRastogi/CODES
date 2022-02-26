@@ -34,5 +34,25 @@ int main()
     print_by_array_method(v);
     cout<<"ELEMENTS OF VECTOR B: ";
     print_by_array_method(b);
+
+    vector<vector<int>> vec;
+    vector<int> vec2;
+    int num;
+    for(int i=0; i<4; i++)
+    {
+        for(int j=0; j<3; j++)
+        {
+            cin>>num;
+            vec2.push_back(num);
+        }
+        vec.push_back(vec2);
+    }
+    cout << "No. of Columns: " << vec.size() << endl;
+    cout << "No. of Rows   : " << vec[0].size() << " " << vec[1].size() << " " <<vec[2].size() << endl;
     return 0;
 }
+/*
+1 2 3 4
+5 6 7 8
+9 8 7 6
+*/

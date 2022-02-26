@@ -28,7 +28,7 @@ int main()
         if(mcap+a[i].second.first <= cap)
             mcap += a[i].second.first;
         else
-            mcap += (int(cap-mcap)/int(a[i].first))*a[i].first;
+            mcap += int(cap-mcap)/int(a[i].first)*a[i].first;
     cout<<endl<<"Max Values : "<<mcap<<"/"<<cap<<endl;
 
     return 0;
