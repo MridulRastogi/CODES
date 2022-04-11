@@ -18,6 +18,7 @@ int main()
     s.insert(5);
     s.insert(5);
 // 5 1 6 5 3 5 => 5 1 6 3 => 1 3 5 6
+
     print(s);
     set<int>::iterator it = s.begin();
     it++;
