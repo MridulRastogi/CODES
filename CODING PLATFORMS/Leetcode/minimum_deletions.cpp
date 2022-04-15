@@ -5,9 +5,7 @@ int sort(map<char, int>& M)
 {
     vector<pair<int, char>> A;
     for (auto it:M)
-    {
         A.push_back(make_pair(it.second, it.first));
-    }
     sort(A.begin(), A.end());
     priority_queue<int> pq;
     int countChar=0;
@@ -20,14 +18,12 @@ int sort(map<char, int>& M)
         if(pq.empty())
             return countChar;
         if(freq==pq.top())
-        {
             if(freq==pq.top())
             {
                 if(freq>1)
                     pq.push(freq-1);
                 countChar++;
             }
-        }
     }
     return countChar;
 }
@@ -47,6 +43,8 @@ int main()
 
     return 0;
 }
+
+
 /*
 class Solution {
 public:
