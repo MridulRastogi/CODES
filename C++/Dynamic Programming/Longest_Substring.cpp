@@ -55,6 +55,6 @@ int main()
     cin>>s;
     cout<<"String: "<<s<<endl;
     int l = lonPalSubStr(s);
-    //cout<<"Length: "<<l<<endl;
+    cout<<"Length: "<<l<<endl;
     return 0;
 }
