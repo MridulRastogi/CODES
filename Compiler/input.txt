@@ -1,6 +1,0 @@
-#include<stdio.h> //Header file included
-int main()	//main declared
-{		
-	
-return 0;	//returning zero
-}
