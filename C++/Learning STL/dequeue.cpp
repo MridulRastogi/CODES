@@ -43,5 +43,7 @@ int main()
     cout<<"Size Before Erase: "<<d.size()<<endl;
     d.erase(d.begin(), d.begin()+1);
     cout<<"Size After Erase : "<<d.size()<<endl;
+    // d.pop_back(); d.pop_back(); d.pop_back();
+    cout << "Dequeue Empty ? => " << d.empty() << endl;
     return 0;
 }
