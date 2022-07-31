@@ -7,6 +7,6 @@ int main()
     printf("Inputted number: %d\n", n);
     printf("Inputted number's address: %d\n",&n);
     int *m = 3;
-    printf("Value of M: %d",m);
+    printf("Value of M: %d", m);
     return 0;
 }

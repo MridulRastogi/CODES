@@ -1,4 +1,3 @@
-#include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -11,7 +10,7 @@ int main()
     int i,n,m,x,y,node;
     for(i=0; i<N; i++)
         vis[i] = 0;         //declaring bool array vis equal to 0
-    cin>>n>>m;              //inputting number of nodes and edges
+    cin >> n >> m;          //inputting number of nodes and edges
     for(i=0; i<m; i++)
     {
         cin>>x>>y;              //inputting edges from x edge to y edge
