@@ -30,6 +30,7 @@ int main()
 
     set<int>::iterator itr = s.find(5);
     cout<<"Value present at itr => "<<*it<<endl;
+
     for (auto it = itr; it!=s.end(); it++)
         cout<<*it<<" ";
     cout<<endl;

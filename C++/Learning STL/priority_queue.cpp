@@ -24,12 +24,19 @@ int main()
     mini.push(3);
     mini.push(2);
     mini.push(4);
-    cout<<"\nSize of min heap => "<<mini.size()<<"\nElements: ";
-    int m = mini.size();
-    for(int i=0; i<m; i++)
+    mini.push(2);
+    //mini.push(2);
+    cout << endl << "Size of min heap => " << mini.size() << endl;
+    cout << "Elements: ";
+    while(!mini.empty())
     {
         cout<<mini.top()<<" ";
         mini.pop();
     }
+    /*for(int i=0; i<mini.size(); i++)
+    {
+        cout << mini.top() << " ";
+        mini.pop();
+    }*/
     return 0;
 }
