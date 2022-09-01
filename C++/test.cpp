@@ -1,28 +1,35 @@
 #include<bits/stdc++.h>
-#include<iostream>
 using namespace std;
 int main()
 {
-    float a,b,x;
-    int i,j,k;
-    float res, min=100000000;
-    for(i=1; i<1000; i++)
+    int r=2, c=5, c2=0, r2=0;
+    for(int i=r-1; i>=0; i--)
     {
-        for(j=1; j<1000; j++)
+        int duplicate = i;
+        for(int j=0; j<=c2; j++)
         {
-            for(k=1; k<1000; k++)
-            {
-                res = ((float)i*j) + ((float)k/j);
-                if(res<min)
-                {
-                    min = res;
-                    a = i;
-                    b = k;
-                    x = j;
-                }
-            }
+            cout << duplicate << "," << j << "  ";
+            duplicate++;
         }
+        cout << endl;
+        c2++;
     }
-    cout<<"a = "<<a<<endl<<"b = "<<b<<endl<<"x = "<<x<<endl<<"Min = "<<min<<endl;
+
+    cout << endl;
+
+    c2 = 1;
+    for(int i=0; i<r; i++)
+    {
+        int duplicate = 0;
+        for(int j=c2; j<c; j++)
+        {
+            cout << duplicate << "," << j << "  ";
+            duplicate++;
+        }
+        cout << endl;
+        r2++;
+        c2++;
+    }
+
     return 0;
 }

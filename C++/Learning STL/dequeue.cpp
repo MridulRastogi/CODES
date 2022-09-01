@@ -10,6 +10,12 @@ int main()
     d.push_back(30);
     d.push_front(40);
 
+    for(int i=0; i<d.size(); i++)
+        cout << d[i] << " ";
+    cout << endl;
+
+
+
     cout<<"Elements inserted in Dequeue d:"<<endl;
     for(int i:d)
         cout<<i<<" ";
