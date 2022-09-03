@@ -45,8 +45,14 @@ int main()
                         cout << "YES\n";
                         break;
                     }
+                    if(containsAll==true)
+                        break;
                 }
+                if(containsAll==true)
+                    break;
             }
+            if(containsAll==true)
+                break;
         }
         if(containsAll == false)
         cout << "NO\n";

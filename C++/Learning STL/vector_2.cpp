@@ -1,4 +1,4 @@
-#include<iostream>
+    #include<iostream>
 #include<vector>
 using namespace std;
 void print_by_array_method(vector<int> &V)

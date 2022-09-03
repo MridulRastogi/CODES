@@ -2,34 +2,14 @@
 using namespace std;
 int main()
 {
-    int r=2, c=5, c2=0, r2=0;
-    for(int i=r-1; i>=0; i--)
+    int num=0;
+    vector<int> vec;
+    while(num!=-1)
     {
-        int duplicate = i;
-        for(int j=0; j<=c2; j++)
-        {
-            cout << duplicate << "," << j << "  ";
-            duplicate++;
-        }
-        cout << endl;
-        c2++;
+        vec.push_back(num);
+        cin >> num;
     }
-
-    cout << endl;
-
-    c2 = 1;
-    for(int i=0; i<r; i++)
-    {
-        int duplicate = 0;
-        for(int j=c2; j<c; j++)
-        {
-            cout << duplicate << "," << j << "  ";
-            duplicate++;
-        }
-        cout << endl;
-        r2++;
-        c2++;
-    }
-
+    int sum  = accumulate(vec.begin(), vec.end(), 0);
+    cout << "\n\n Result : " << sum << "\n\n";
     return 0;
 }
