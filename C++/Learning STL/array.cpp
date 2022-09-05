@@ -14,7 +14,7 @@ int main()
     cout << endl << endl;
 
     cout << "Element at 1st Index : " << a.at(1)   << endl;
-    cout << "Array Empty or Not   : " << bool(uint(a.empty())) << endl;
+    cout << "Array Empty or Not   : " << a.empty() << endl;
     cout << "First Element        : " << a.front() << endl;
     cout << "Last  Element        : " << a.back()  << endl;
 
