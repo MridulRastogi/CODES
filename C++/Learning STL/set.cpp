@@ -34,6 +34,8 @@ int main()
     for (auto it = itr; it!=s.end(); it++)
         cout<<*it<<" ";
     cout<<endl;
+    cout << s.size() << endl;
+
     return 0;
 
 }

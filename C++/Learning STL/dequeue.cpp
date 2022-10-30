@@ -10,6 +10,8 @@ int main()
     d.push_back(30);
     d.push_front(40);
 
+
+
     for(int i=0; i<d.size(); i++)
         cout << d[i] << " ";
     cout << endl;
@@ -54,6 +56,7 @@ int main()
     while(!     d.empty())
     {
         cout << d.front() << " ";
+        //cout << d.back() << " ";
         d.pop_front();
     }
     return 0;

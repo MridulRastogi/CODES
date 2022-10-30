@@ -28,11 +28,14 @@ int main()
     //mini.push(2);
     cout << endl << "Size of min heap => " << mini.size() << endl;
     cout << "Elements: ";
-    while(!mini.empty())
+
+
+    /*while(mini.empty() == false)
     {
-        cout<<mini.top()<<" ";
+        cout << mini.top() << " ";
         mini.pop();
-    }
+    }*/
+    
     /*for(int i=0; i<mini.size(); i++)
     {
         cout << mini.top() << " ";
