@@ -11,6 +11,7 @@ int main()
     maxi.push(3);
     maxi.push(2);
     maxi.push(4);
+    maxi.push(2);
     cout<<"Size of max heap => "<<maxi.size()<<endl<<"Elements: ";
     int n = maxi.size();
     //for(int i=0; i<n; i++)
@@ -35,7 +36,7 @@ int main()
         cout << mini.top() << " ";
         mini.pop();
     }*/
-    
+
     /*for(int i=0; i<mini.size(); i++)
     {
         cout << mini.top() << " ";
