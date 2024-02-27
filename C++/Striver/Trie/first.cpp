@@ -51,7 +51,7 @@ class Trie
     		Node *node = root;                            // initializing dummy node pointing to root initially
     		for (int i = 0; i < word.size(); i++)
             {
-    			if (!node->containKey(word[i]))
+    			if (node->containKey(word[i]) == false)
     				node->put(word[i], new Node());
     			node = node->get(word[i]);                // moves to reference trie
     		}
@@ -63,7 +63,7 @@ class Trie
     		Node *node = root;
     		for (int i = 0; i < word.size(); i++)
             {
-    			if (!node->containKey(word[i]))
+    			if (node->containKey(word[i]) == false)
     				return false;
     			node = node->get(word[i]);
     		}
@@ -75,7 +75,7 @@ class Trie
     		Node* node = root;
     		for (int i = 0; i < prefix.size(); i++)
             {
-    			if (!node->containKey(prefix[i]))
+    			if (node->containKey(prefix[i]) == false)
     				return false;
     			node = node->get(prefix[i]);
     		}
@@ -91,24 +91,27 @@ int main()
         2 - search if it exists
         3 - search if it starts with
     */
-	vector<int>    type  = {   1   ,    1  ,    2  ,   3  ,   2  };
+	vector<int>    type  = {   1   ,    1  ,    2  ,   2  ,  3   };
 	vector<string> value = {"hello", "help", "help", "hel", "hel"};
 	Trie trie;
 	for (int i = 0; i < n; i++)
     {
         switch(type[i])
         {
-            case 1: trie.insert(value[i]);
+            case 1: cout << "Inserting " << value[i] << endl;
+					trie.insert(value[i]);
             break;
-            case 2: if (trie.search(value[i]))
-        				cout << "true" << "\n";
+            case 2: cout << "Searching for " << value[i] << ": ";
+					if (trie.search(value[i]))
+        				cout << "True" << "\n";
         			else
-        				cout << "false" << "\n";
+        				cout << "False" << "\n";
             break;
-            case 3: if (trie.startsWith(value[i]))
-        				cout << "true" << "\n";
+            case 3: cout << "Searching if any value starts with " << value[i] << ": ";
+					if (trie.startsWith(value[i]))
+        				cout << "True" << "\n";
         			else
-        				cout << "false" << "\n";
+        				cout << "False" << "\n";
             break;
         }
 	}

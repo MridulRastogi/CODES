@@ -26,11 +26,9 @@ int main()
                 m[s[i][j]]++;
         }
         cout<<s[i][j]<<endl;
-        for(int k=0; k<m.size(); k++)
-            cout << m[k] << endl;
+        for(k=0; k<m.size(); k++)
+            cout << m[k];
         cout<<endl;
     }
-
-
     return 0;
 }

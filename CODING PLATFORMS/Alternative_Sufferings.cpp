@@ -38,6 +38,7 @@ void solve()
     }
     for(int j=0; j<n; j++)
     {
+        // cout << ( k<ar[j] ? '0' : ((k-ar[j])%2==0 ? '1' : '0') );
         if(k < ar[j])
             cout << '0';
         else
